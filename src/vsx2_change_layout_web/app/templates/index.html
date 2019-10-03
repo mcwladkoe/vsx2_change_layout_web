@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>{{ _('pageTitle') }}</h1>
+    <div class="main-content">
+        <form id="main-form">
+            <div class="form-group">
+                <label for="inputarea">{{ _('inputAreaLabel') }}</label>
+                <textarea class="form-control" id="inputarea" name="i" rows="3"></textarea>
+            </div>
+            <div class="row form-container justify-content-center align-items-center">
+                <div class="form-group col-lg-2">
+                    <select name="source" class="form-control">
+                        {% for layout in layouts %}
+                            <option value="{{ layout }}">{{ ' '.join(layout.split('_')).upper() }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="form-group col-lg-1 text-center">
+                    <span class="d-lg-block d-none">
+                        &rarr;
+                    </span>
+                    <span class="d-lg-none">
+                        &darr;
+                    </span>
+                </div>
+                <div class="form-group col-lg-2">
+                    <select name="destination" class="form-control">
+                        {% for layout in layouts %}
+                            <option value="{{ layout }}">{{ ' '.join(layout.split('_')).upper() }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+            </div>
+            <div class="row submit-container">
+                <div class="col-12 btn btn-dark submit">
+                    {{ _('actionButton') }}
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="outputarea">
+                    {{ _('outputAreaLabel') }}
+                    <div
+                        class="btn btn-default copy"
+                        title="{{ _('copyButtonTitle') }}"
+                        data-success="{{ _('successCopiedMessage') }}"
+                    >
+                        ⎘ {{ _('copyButtonLabel') }}
+                    </div>
+                </label>
+                <textarea class="form-control" id="outputarea" rows="3" disabled="disabled"></textarea>
+            </div>
+        </form>
+    </div>
+{% endblock %}

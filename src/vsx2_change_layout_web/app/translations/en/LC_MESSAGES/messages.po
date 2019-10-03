@@ -1,0 +1,68 @@
+# English translations for PROJECT.
+# Copyright (C) 2019 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2019-10-04 01:02+0300\n"
+"PO-Revision-Date: 2019-08-26 02:50+0300\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: src/vsx2_change_layout_web/app/server.py:42
+msgid "textTooLong"
+msgstr "The text is too long."
+
+#: src/vsx2_change_layout_web/app/templates/main.html:6
+msgid "setTitle"
+msgstr "Change Layout"
+
+#: src/vsx2_change_layout_web/app/templates/main.html:20
+msgid "mainPage"
+msgstr "Home"
+
+#: src/vsx2_change_layout_web/app/templates/main.html:23
+msgid "TextRotationLink"
+msgstr "Rotate text"
+
+#: src/vsx2_change_layout_web/app/templates/main.html:26
+msgid "ChangeLayoutLink"
+msgstr "Change Layout"
+
+#: src/vsx2_change_layout_web/app/templates/index.html:4
+msgid "pageTitle"
+msgstr "Change Layout"
+
+#: src/vsx2_change_layout_web/app/templates/index.html:8
+msgid "inputAreaLabel"
+msgstr "Input text here"
+
+#: src/vsx2_change_layout_web/app/templates/index.html:37
+msgid "actionButton"
+msgstr "Change Layout"
+
+#: src/vsx2_change_layout_web/app/templates/index.html:42
+msgid "outputAreaLabel"
+msgstr "Changed text"
+
+#: src/vsx2_change_layout_web/app/templates/index.html:45
+msgid "copyButtonTitle"
+msgstr "Copy to clipboard"
+
+#: src/vsx2_change_layout_web/app/templates/index.html:46
+msgid "successCopiedMessage"
+msgstr "Copied."
+
+#: src/vsx2_change_layout_web/app/templates/index.html:48
+msgid "copyButtonLabel"
+msgstr "copy"
+
